@@ -1,0 +1,198 @@
+{
+  "madrasa": {
+    "name": {
+      "uz": "Madrasa nomi",
+      "ru": "Название медресе",
+      "ar": "اسم المدرسة"
+    },
+    "slogan": {
+      "uz": "Ilm – nurdir",
+      "ru": "Знание – это свет",
+      "ar": "العلم نور"
+    },
+    "about": {
+      "uz": "Bu yerga madrasa haqida qisqacha ma'lumot yoziladi: tarixi, ta'lim yo'nalishlari, o'quvchilar soni va boshqalar.",
+      "ru": "Здесь пишется краткая информация о медресе: история, направления обучения, количество учащихся и другое.",
+      "ar": "هنا تكتب نبذة مختصرة عن المدرسة: تاريخها ومجالات التعليم وعدد الطلاب وغير ذلك."
+    },
+    "director": {
+      "uz": "F.I.Sh.",
+      "ru": "Ф.И.О.",
+      "ar": "الاسم الكامل"
+    },
+    "founded": {
+      "uz": "1990-yil",
+      "ru": "1990 год",
+      "ar": "عام 1990"
+    },
+    "address": {
+      "uz": "Buxoro shahri, ... ko'chasi, ...-uy",
+      "ru": "г. Бухара, ул. ..., дом ...",
+      "ar": "مدينة بخارى، شارع ...، رقم ..."
+    },
+    "map_url": "",
+    "phone": "+998 00 000 00 00",
+    "email": "",
+    "telegram": "https://t.me/",
+    "website": ""
+  },
+
+  "prayer": {
+    "city": "Bukhara",
+    "country": "Uzbekistan",
+    "city_name": {
+      "uz": "Buxoro",
+      "ru": "Бухара",
+      "ar": "بخارى"
+    },
+    "method": 3,
+    "school": 1
+  },
+
+  "schedule": [
+    {
+      "group": { "uz": "1-kurs", "ru": "1 курс", "ar": "السنة الأولى" },
+      "days": [
+        {
+          "weekday": 1,
+          "day": { "uz": "Dushanba", "ru": "Понедельник", "ar": "الإثنين" },
+          "lessons": [
+            {
+              "time": "08:30–09:50",
+              "subject": { "uz": "Qur'oni karim", "ru": "Коран", "ar": "القرآن الكريم" },
+              "teacher": { "uz": "Ustoz A.", "ru": "Устоз А.", "ar": "الأستاذ أ." },
+              "room": { "uz": "101-xona", "ru": "Ауд. 101", "ar": "قاعة 101" }
+            },
+            {
+              "time": "10:00–11:20",
+              "subject": { "uz": "Arab tili", "ru": "Арабский язык", "ar": "اللغة العربية" },
+              "teacher": { "uz": "Ustoz B.", "ru": "Устоз Б.", "ar": "الأستاذ ب." },
+              "room": { "uz": "102-xona", "ru": "Ауд. 102", "ar": "قاعة 102" }
+            }
+          ]
+        },
+        {
+          "weekday": 2,
+          "day": { "uz": "Seshanba", "ru": "Вторник", "ar": "الثلاثاء" },
+          "lessons": [
+            {
+              "time": "08:30–09:50",
+              "subject": { "uz": "Fiqh", "ru": "Фикх", "ar": "الفقه" },
+              "teacher": { "uz": "Ustoz C.", "ru": "Устоз С.", "ar": "الأستاذ ج." },
+              "room": { "uz": "101-xona", "ru": "Ауд. 101", "ar": "قاعة 101" }
+            },
+            {
+              "time": "10:00–11:20",
+              "subject": { "uz": "Hadis", "ru": "Хадис", "ar": "الحديث" },
+              "teacher": { "uz": "Ustoz D.", "ru": "Устоз Д.", "ar": "الأستاذ د." },
+              "room": { "uz": "103-xona", "ru": "Ауд. 103", "ar": "قاعة 103" }
+            }
+          ]
+        },
+        {
+          "weekday": 3,
+          "day": { "uz": "Chorshanba", "ru": "Среда", "ar": "الأربعاء" },
+          "lessons": [
+            {
+              "time": "08:30–09:50",
+              "subject": { "uz": "Aqida", "ru": "Акида", "ar": "العقيدة" },
+              "teacher": { "uz": "Ustoz A.", "ru": "Устоз А.", "ar": "الأستاذ أ." },
+              "room": { "uz": "101-xona", "ru": "Ауд. 101", "ar": "قاعة 101" }
+            }
+          ]
+        },
+        {
+          "weekday": 4,
+          "day": { "uz": "Payshanba", "ru": "Четверг", "ar": "الخميس" },
+          "lessons": [
+            {
+              "time": "08:30–09:50",
+              "subject": { "uz": "Tajvid", "ru": "Таджвид", "ar": "التجويد" },
+              "teacher": { "uz": "Ustoz B.", "ru": "Устоз Б.", "ar": "الأستاذ ب." },
+              "room": { "uz": "102-xona", "ru": "Ауд. 102", "ar": "قاعة 102" }
+            }
+          ]
+        },
+        {
+          "weekday": 5,
+          "day": { "uz": "Juma", "ru": "Пятница", "ar": "الجمعة" },
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "group": { "uz": "2-kurs", "ru": "2 курс", "ar": "السنة الثانية" },
+      "days": [
+        {
+          "weekday": 1,
+          "day": { "uz": "Dushanba", "ru": "Понедельник", "ar": "الإثنين" },
+          "lessons": [
+            {
+              "time": "08:30–09:50",
+              "subject": { "uz": "Tafsir", "ru": "Тафсир", "ar": "التفسير" },
+              "teacher": { "uz": "Ustoz E.", "ru": "Устоз Е.", "ar": "الأستاذ هـ." },
+              "room": { "uz": "201-xona", "ru": "Ауд. 201", "ar": "قاعة 201" }
+            }
+          ]
+        },
+        {
+          "weekday": 2,
+          "day": { "uz": "Seshanba", "ru": "Вторник", "ar": "الثلاثاء" },
+          "lessons": [
+            {
+              "time": "08:30–09:50",
+              "subject": { "uz": "Islom tarixi", "ru": "История ислама", "ar": "التاريخ الإسلامي" },
+              "teacher": { "uz": "Ustoz F.", "ru": "Устоз Ф.", "ar": "الأستاذ و." },
+              "room": { "uz": "202-xona", "ru": "Ауд. 202", "ar": "قاعة 202" }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "news": [
+    {
+      "date": "2026-11-10",
+      "type": "announcement",
+      "title": {
+        "uz": "Ota-onalar majlisi",
+        "ru": "Родительское собрание",
+        "ar": "اجتماع أولياء الأمور"
+      },
+      "body": {
+        "uz": "Shanba kuni soat 10:00 da madrasa majlislar zalida ota-onalar majlisi bo'lib o'tadi.",
+        "ru": "В субботу в 10:00 в актовом зале медресе состоится родительское собрание.",
+        "ar": "يعقد اجتماع أولياء الأمور يوم السبت الساعة العاشرة صباحا في قاعة المدرسة."
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "type": "news",
+      "title": {
+        "uz": "Qorilar tanlovi g'oliblari aniqlandi",
+        "ru": "Определены победители конкурса чтецов Корана",
+        "ar": "إعلان الفائزين في مسابقة القراء"
+      },
+      "body": {
+        "uz": "Madrasada o'tkazilgan Qur'on qiroati tanlovida o'quvchilarimiz faxrli o'rinlarni egalladi.",
+        "ru": "Наши учащиеся заняли призовые места в конкурсе чтения Корана, проведённом в медресе.",
+        "ar": "حصل طلابنا على مراكز متقدمة في مسابقة تلاوة القرآن التي أقيمت في المدرسة."
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "type": "news",
+      "title": {
+        "uz": "Mobil ilovamiz ishga tushdi",
+        "ru": "Запущено наше мобильное приложение",
+        "ar": "إطلاق تطبيقنا للهاتف"
+      },
+      "body": {
+        "uz": "Endi dars jadvali, yangiliklar va namoz vaqtlarini shu ilova orqali kuzatib borishingiz mumkin.",
+        "ru": "Теперь расписание, новости и время намаза можно смотреть в этом приложении.",
+        "ar": "يمكنكم الآن متابعة الجدول والأخبار ومواقيت الصلاة عبر هذا التطبيق."
+      }
+    }
+  ]
+}
