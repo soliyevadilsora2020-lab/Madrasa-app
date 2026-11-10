@@ -1,0 +1,65 @@
+name: APK yig'ish
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "assets/data.json"
+      - "README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  APP_NAME: "Madrasa"
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Android va iOS papkalarini yaratish
+        run: flutter create . --platforms=android,ios --org uz.madrasa --project-name madrasa_app
+
+      - name: Internet ruxsati va ilova nomi
+        run: |
+          M=android/app/src/main/AndroidManifest.xml
+          grep -q 'android.permission.INTERNET' "$M" || sed -i 's#<application#<uses-permission android:name="android.permission.INTERNET"/>\n    <application#' "$M"
+          sed -i 's#android:label="[^"]*"#android:label="${{ env.APP_NAME }}"#' "$M"
+
+      - run: flutter pub get
+
+      - name: Ilova belgisi
+        run: dart run flutter_launcher_icons
+
+      - name: APK yig'ish
+        run: >
+          flutter build apk --release
+          --dart-define=DATA_URL=https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/assets/data.json
+
+      - name: APK nomini o'zgartirish
+        run: cp build/app/outputs/flutter-apk/app-release.apk madrasa.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: madrasa-apk
+          path: madrasa.apk
+
+      - name: Releases bo'limiga joylash
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: Madrasa ilovasi v1.0.${{ github.run_number }}
+          files: madrasa.apk
